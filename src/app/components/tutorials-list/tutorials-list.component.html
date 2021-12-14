@@ -1,0 +1,16 @@
+<table>
+    <thead>
+        <tr>
+            <th>{{tempList}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dataItem of tempList">
+            <td>
+                {{dataItem.string}}
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>tutorials-list works!</p>
+<button (click)="refreshList()"></button>
